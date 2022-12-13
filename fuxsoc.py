@@ -19,6 +19,10 @@ def exploit():
         #if connectionCounter % 500 == 0:
         print(connectionCounter)
 
-for i in range(5000):
-    thread = threading.Thread(target=exploit)
-    thread.start()
+def main():
+    for i in range(5000):
+        thread = threading.Thread(target=exploit)
+        thread.start()
+
+if __name__ == '__main__':
+    main()
